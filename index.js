@@ -1,9 +1,26 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function reverseString(word) {
+  return word.split("").reverse().join("");
 }
+  function isPalindrome(word) {
+    // reverse the input string
+    const reversedWord = reverseString(word);
+    // if the reversed string is the same as the input
+    if (word === reversedWord) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 
 /* 
   Add your pseudocode here
+  reverse the input string
+
+if the reversed string is the same as the input
+  return true
+else
+  return false
 */
 
 /*
